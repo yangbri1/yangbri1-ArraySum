@@ -8,6 +8,14 @@ public class ArraySum {
      */
     public int sum(int[] arr){
 
-        return 0;
+        // assign initial value of 0 to variable 'total' 
+        int total = 0;
+        // using for-each loop to iterate through each int element within array 'arr'
+        for(int elem : arr){
+            // recursively add each respective 'elem' value to total
+            total += elem;
+        }
+        // return the grand sum
+        return total;
     }
 }
